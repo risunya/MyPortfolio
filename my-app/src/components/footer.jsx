@@ -1,4 +1,5 @@
 import React,  { useEffect } from 'react';
+import '../styles/components/footer.css'
 import  {updateTimeInFooter} from '../utilities/time.js';
 
 const Footer = () => {

@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
+import '../styles/components/recent-posts.css';
 
-const Recent = () => {
-    return (
-<div class="posts">
-        <div class="upper-wrapper">
-          <a class="left-text">Recent posts</a>
-          <a href="blog.html" class="link-blog">View all</a>
+export const RecentPosts = () => {
+    return(
+        <div className="recent-posts">
+        <div className="recent-posts-upper-wrapper">
+          <a className="recent-posts-left-text">Recent posts</a>
+          <a href="blog.html" className="link-blog">View all</a>
         </div>
-        <div class="rec-posts">
-          <div class="post-one">
+        <div className="recent-posts-rec-posts">
+          <div className="recent-posts-post-one">
             <h1>Making a web page with search engine</h1>
-            <div class="post-info">
+            <div className="recent-posts-post-info">
               <a>6 Feb 2024</a>
               <a>|</a>
               <a>Design, Frontend, Backend</a>
@@ -19,9 +20,9 @@ const Recent = () => {
               In a personal project, I created a backend system for organizing and searching study notes by keywords. Using Node.js and Express.js, I developed a server architecture handling user authentication, data storage, and retrieval. This project honed my backend skills.
             </p>
           </div>
-          <div class="post-two">
+          <div className="recent-posts-post-one">
             <h1>Making a web page for my portfolio</h1>
-            <div class="post-info">
+            <div className="recent-posts-post-info">
               <a>1 Feb 2024</a>
               <a>|</a>
               <a>Design, Frontend</a>
@@ -32,7 +33,5 @@ const Recent = () => {
           </div>
         </div>
       </div>
-    );
-};
-
-export default Recent;
+    )
+}

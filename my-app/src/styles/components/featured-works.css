@@ -1,0 +1,21 @@
+.featured-works-wrapper {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1200px;
+  }
+
+
+  .featured-works-left-text {
+    padding-bottom: 15px;
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 272.727% */
+  }
+  
+    .featured-works-section {
+    margin: auto;
+    max-width: 1200px;
+    display: block;
+  }

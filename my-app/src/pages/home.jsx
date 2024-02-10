@@ -1,19 +1,19 @@
 import React from "react";
 import Header from '../components/header.jsx';
 import Footer from '../components/footer.jsx';
-import {Profile} from '../components/profile.jsx';
-import Recent from "../components/recent.jsx";
-import Featured from "../components/featured.jsx";
+import { ItemProfile } from "../components/item-profile.jsx";
+import { RecentPosts } from "../components/recent-posts.jsx";
+import { FeaturedWorks } from "../components/featured-works.jsx";
 
 const Home = () => {
     return (
         <div>
             <Header/>
-            <Profile/>
-            <Recent/>
-            <Featured/>
+            <ItemProfile/>
+            <RecentPosts/>
+            <FeaturedWorks/>
             <Footer/>
-         </div>
+        </div>
     )
 }
 
