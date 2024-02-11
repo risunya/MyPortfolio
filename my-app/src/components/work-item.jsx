@@ -4,7 +4,7 @@ import '../styles/components/work-item.css';
 export const WorkItem = () => {
     return (
         <div className="work-one">
-              <img src="../../public/assets/Rectangle_30.jpg" className="work-image"/>
+              <img src="../assets/Rectangle_30.jpg" className="work-image"/>
               <section className="work-info">
                 <a className="work-heading">Designing Dashboards</a>
                 <div className="work-properties">
