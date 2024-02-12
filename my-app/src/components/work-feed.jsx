@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/components/work-feed.css';
 import { WorkItem } from "./work-item";
+import {creations} from '../data/work-data.js';
 
 export const WorkFeed = () => {
     return (
@@ -9,11 +10,7 @@ export const WorkFeed = () => {
           <a className="work-feed-left-text">Works</a>
         </div>
             <section className="work-feed-featured-section">
-                <WorkItem/>
-                <WorkItem/>
-                <WorkItem/>
-                <WorkItem/>
-                <WorkItem/>
+               {creations.map((creation) => <WorkItem {...creation}/>)}
             </section>
         </div>
     )

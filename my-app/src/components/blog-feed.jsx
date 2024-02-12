@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/components/blog-feed.css';
 import { BlogItem } from "./blog-item";
+import {quarters} from '../data/blog-data.js';
 
 export const BlogFeed = () => {
     return (
@@ -8,10 +9,7 @@ export const BlogFeed = () => {
         <div className="blog-feed-header">Blog</div>
 
         <section className="blog-feed-table">
-            <BlogItem/>
-            <BlogItem/>
-            <BlogItem/>
-            <BlogItem/>
+        {quarters.map((quarter) => <BlogItem {...quarter}/>)}
         </section>
         </div>
 

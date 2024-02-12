@@ -1,23 +1,23 @@
-import React,  { useEffect } from 'react';
-import '../styles/components/footer.css'
-import  {updateTimeInFooter} from '../utilities/time.js';
+import React,  { useEffect, useState } from 'react';
+import '../styles/components/footer.css';
 
-const Footer = () => {
-    useEffect(() => {
-        updateTimeInFooter(); // Вызываем функцию updateTimeInFooter при монтировании компонента
-    }, []);
+
+
+export default function Footer() {
+    const [now, timeChange] = useState(new Date())
+    setInterval(() => timeChange(new Date()), 1000)
 
     return (
         <footer className="footer-wrapper">
 
             <div className="wrapper-left-block">
-            <div className="footer-block">  
+            <div className="footer-block"> 
                 <div className="footer-caption">VERSION</div>
                 <div className="footer-info">2024 Edition</div>
             </div>
             <div className="footer-block">  
                 <div className="footer-caption">LOCAL TIME</div>
-                <div className="footer-info"><div id="time"></div></div>
+                <div className="footer-info">{now.toLocaleTimeString()}</div>
             </div>
             </div>
     
@@ -37,4 +37,3 @@ const Footer = () => {
     );
 };
 
-export default Footer;
