@@ -4,6 +4,7 @@ import Home from './pages/home.jsx';
 import Blog from './pages/blog.jsx';
 import Work from './pages/work.jsx';
 import Contact from './pages/contact.jsx';
+import styled from 'styled-components';
 
 
 function App() {

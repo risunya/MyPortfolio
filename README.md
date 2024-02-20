@@ -4,9 +4,11 @@ Welcome to my React portfolio repository! In this project, I've revamped my port
 
 #### Technologies Used:
 
-- React.js
 - HTML
 - CSS
+- React.js
+- Styled Components
+- Node js
 
 This portfolio showcases my projects and skills in a more modern and efficient way, leveraging the power of React components and state management.
 
@@ -32,6 +34,6 @@ Feel free to explore the codebase and provide any feedback or suggestions for im
 
 #### Thank you for visiting!
 
-**LAST Commit on Feb 13, 2024**
+**LAST Commit on Feb 20, 2024**
 
-**LAST Update on Feb 13, 2024**
+**LAST Update on Feb 20 2024**
