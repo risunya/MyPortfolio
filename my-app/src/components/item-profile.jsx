@@ -25,7 +25,7 @@ const ItemProfileStyled = styled.div`
 
 .item-profile-about-me h3 {
   color: white;
-  font-size: calc(clamp(0.75em, 1.2vw, 4em) * .75); 
+  font-size: calc(clamp(0.75em, 1.4vw, 4em) * .75); 
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -75,7 +75,7 @@ export const ItemProfile = () => {
               cutting-edge technologies.
             </h3>
             <button className="item-profile-cv-button">
-              <a>Download CV</a>
+              <span>Download CV</span>
             </button>
           </div>
 

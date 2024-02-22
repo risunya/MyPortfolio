@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
-const StyledComponent = styled.div`
+const HeaderStyled = styled.div`
 .header {
   padding-top: 0.5em;
   margin: auto;
@@ -14,7 +14,7 @@ const StyledComponent = styled.div`
 
 .logo {
   color:  white;
-  font-size: calc(clamp(3.25em, 4rem, 4rem) * .75); 
+  font-size: calc(clamp(2.2em, 3rem, 4rem) * .75); 
   font-style: normal;
   font-weight: 700;
   line-height: 60px; /* 136.364% */
@@ -49,7 +49,7 @@ const Header = () => {
     };
 
     return (
-      <StyledComponent>
+      <HeaderStyled>
         <div className="head-wrapper">
         <header className="header">
           <a href="home" className="logo" onClick={() => handleClick("Home")}>Aleshkin</a>
@@ -62,7 +62,7 @@ const Header = () => {
           </nav>  
         </header>
       </div>
-      </StyledComponent>
+      </HeaderStyled>
     );
 };
 
