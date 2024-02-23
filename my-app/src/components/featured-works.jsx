@@ -8,6 +8,8 @@ const FeaturedWorksStyled = styled.div`
     margin: auto;
     margin-top: 100px;
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
   }
 
 
@@ -18,6 +20,17 @@ const FeaturedWorksStyled = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 60px; /* 272.727% */
+  }
+
+  .link-work {
+    text-decoration: none;
+    color: #00a8cc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
   }
   
     .featured-works-section {
@@ -32,6 +45,7 @@ export const FeaturedWorks = () => {
         <div className="featured-works">
             <div className="featured-works-wrapper">
                 <span className="featured-works-left-text">Featured Works</span>
+                <a href="/work" className="link-work">View all</a>
             </div>
 
             <section className="featured-works-section">
