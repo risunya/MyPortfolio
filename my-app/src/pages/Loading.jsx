@@ -32,7 +32,6 @@ const LoadingPlaceholderStyled = styled.div`
 .greetings.show {
   opacity: 1;
 }
-
   `
 
   export function LoadingPlaceholder() {
@@ -66,7 +65,7 @@ const LoadingPlaceholderStyled = styled.div`
       // Добавляем класс .hidden после всех анимаций текста
       setTimeout(() => {
         wrapperElement.classList.add('hidden');
-      }, 2600); // 2600 - это последняя задержка в вашем массиве timeouts
+      }, 2400); 
     }, []);
   
     return (
