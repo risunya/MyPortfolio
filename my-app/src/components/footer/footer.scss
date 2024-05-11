@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    font-size: 25px;
+    padding: 20px 0;
+    box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
+    display: flex;
+    .footer-wrapper {
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 1280px;
+    }   
+}
+
+
+
+       

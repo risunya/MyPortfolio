@@ -1,0 +1,36 @@
+.header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    font-size: 25px;
+    padding: 20px 0;
+    box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
+    position: sticky;
+    top: 0px;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 1280px;
+        
+    }
+    .logo-text {
+        font-weight: 800;
+        color: var(--text-color);
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        .nav-text {
+            font-size: 22px;
+            transition: .3s;
+            color: var(--text-color);
+        }
+        .nav-text:hover {
+           color: var(--second-text-color);
+        }
+    }
+
+}

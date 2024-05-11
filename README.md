@@ -7,8 +7,7 @@ Welcome to my React portfolio repository! In this project, I've revamped my port
 - HTML
 - CSS
 - React.js
-- Styled Components
-- Node js
+- Vite
 
 This portfolio showcases my projects and skills in a more modern and efficient way, leveraging the power of React components and state management.
 
@@ -17,7 +16,6 @@ This portfolio showcases my projects and skills in a more modern and efficient w
 - Interactive navigation
 - Responsive design
 - Project showcases
-- Contact form
 
 #### Installation:
 
@@ -34,6 +32,3 @@ Feel free to explore the codebase and provide any feedback or suggestions for im
 
 #### Thank you for visiting!
 
-**LAST Commit on Feb 24, 2024**
-
-**LAST Update on Feb 24, 2024**
