@@ -1,0 +1,22 @@
+.worklist {
+    margin: 10px auto;
+    width: 1280px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .worklist-item {
+        background-color: var(--dark-background-color);
+        padding: 15px;
+        .number {
+
+        }
+        .title {
+
+        }
+        .subtitle {
+
+        }
+    }
+   
+}

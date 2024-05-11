@@ -3,14 +3,25 @@
     color: var(--text-color);
     display: flex;
     font-size: 25px;
-    padding: 20px 0;
     box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
     display: flex;
     .footer-wrapper {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
         width: 1280px;
+        .reserved {
+            font-size: 18px;
+        }
+        .links {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            .links__item {
+                padding: 10px;
+            }
+        }
     }   
 }
 
