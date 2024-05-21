@@ -20,7 +20,13 @@ export const MarqueeComponent = () => {
     return (
         <div className="marquee-wrapper">
             <div className='marquee'>
-                <Marquee speed={60} autoFill={true} direction='right' pauseOnHover={true}>
+                <Marquee 
+                gradient={true} 
+                speed={60} 
+                autoFill={true} 
+                direction='right' 
+                pauseOnHover={true}
+                >
                     <div className="marquee-item">
                         <div className="marquee-item__name">FRONTEND</div>
                         <div className="marquee-item__pictures">
@@ -29,9 +35,9 @@ export const MarqueeComponent = () => {
                             <ScssLogo/>
                             <ViteLogo/>
                             <WebpackLogo/>
-                            <ReactLogo/>
-                            <TypeScriptLogo/>
                             <JavaScriptLogo/>
+                            <TypeScriptLogo/>
+                            <ReactLogo/>
                             <JestLogo/>
                         </div>
                     </div>
@@ -54,7 +60,13 @@ export const MarqueeComponent = () => {
                 </Marquee>
             </div>
             <div className="marquee">
-            <Marquee speed={60} autoFill={true} direction='left' pauseOnHover={true}>
+                <Marquee 
+                gradient={true} 
+                speed={60} 
+                autoFill={true} 
+                direction='left' 
+                pauseOnHover={true}
+                >
                     <div className="marquee-item">
                         <div className="marquee-item__name">FRONTEND</div>
                         <div className="marquee-item__pictures">
@@ -63,9 +75,9 @@ export const MarqueeComponent = () => {
                             <ScssLogo/>
                             <ViteLogo/>
                             <WebpackLogo/>
-                            <ReactLogo/>
-                            <TypeScriptLogo/>
                             <JavaScriptLogo/>
+                            <TypeScriptLogo/>
+                            <ReactLogo/>
                             <JestLogo/>
                         </div>
                     </div>

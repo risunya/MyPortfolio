@@ -1,4 +1,5 @@
 import { FirstIcon } from './images/github';
+import { ThirdIcon } from './images/gitlab';
 import { SecondIcon } from './images/linkedin';
 import './profile.scss';
 
@@ -13,10 +14,11 @@ export const Profile = () => {
                         <div className="links">
                             <div className="links__item"><FirstIcon/></div>
                             <div className="links__item"><SecondIcon/></div>
+                            <div className="links__item"><ThirdIcon/></div>
                         </div>
                     </div>
                     <div className="info-right">
-                        <img src="./profile.jpeg" alt="profile-picture" className="profile-picture" />
+                    <img src="./icon-one.png" alt="profile-picture" className="profile-picture" />
                     </div>
                 </div>
             </div>
