@@ -1,0 +1,38 @@
+.marquee-wrapper {
+    gap: 10px;
+    display: block;
+    z-index: -1;
+}
+.marquee {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 0 15px 0;    
+    .marquee-item {
+        padding: 10px 20px;
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        border-radius: 99999px;
+        border: 1px solid rgb(235, 226, 226);
+        .marquee-item__name {
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+            padding: 0 20px 0 0;
+        }
+        .marquee-item__pictures {
+            display: flex;
+            justify-content: space-around;
+            * {
+                gap: 15px;
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                padding: 0 5px;
+            }
+        }
+        
+    }
+}

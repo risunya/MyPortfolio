@@ -2,6 +2,6 @@ import './carousel.scss';
 
 export const Carousel = () => {
     return (
-        <div>carousel</div>
+        <div className='works-carousel'>carousel</div>
     )
 }

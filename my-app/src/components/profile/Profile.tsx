@@ -1,6 +1,5 @@
 import { FirstIcon } from './images/github';
 import { SecondIcon } from './images/linkedin';
-import { TypeScriptLogo } from './images/typescriptlogo';
 import './profile.scss';
 
 export const Profile = () => {
@@ -19,21 +18,6 @@ export const Profile = () => {
                     <div className="info-right">
                         <img src="./profile.jpeg" alt="profile-picture" className="profile-picture" />
                     </div>
-                </div>
-                <div className="tech-stack">
-                    <div className='tech-stack-name'>Current tech stack</div>
-                    <span>|</span>
-                    <ul className="tech-stack">
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                        <li className="tech-stack__item"><TypeScriptLogo/></li>
-                    </ul>
                 </div>
             </div>
         </div>
