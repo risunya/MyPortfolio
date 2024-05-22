@@ -6,11 +6,12 @@ import { Autoplay, Pagination} from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { tasks } from "../../data/project-data"
 
 export const Carousel = () => {
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
+    const onAutoplayTimeLeft = (s: unknown, time: number, progress: number) => {
         progressCircle.current.style.setProperty('--progress', 1 - progress);
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
@@ -42,18 +43,19 @@ export const Carousel = () => {
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <div className="swiper-box">Slide 1</div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="swiper-box">Slide 2</div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="swiper-box">Slide 3</div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="swiper-box">Slide 4</div>
-                    </SwiperSlide>
+                    {tasks.map(function(data) {
+                        return (
+                            <div className="worklist-item">
+                            <SwiperSlide>
+                                <div className="worklist-item-wrapper">
+                                    <div className="number">{data.id}</div>
+                                    <div className="title">Name of work: {data.title}</div>
+                                    <div className="subtitle">Title {data.subtitle}</div>
+                                </div>
+                            </SwiperSlide>
+                            </div>
+                        )
+                     })}
                     <div className="autoplay-progress" slot="container-end">
                         <svg viewBox="0 0 48 48" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>
@@ -65,3 +67,5 @@ export const Carousel = () => {
         </div>
     )
 }
+
+

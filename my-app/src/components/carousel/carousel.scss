@@ -39,6 +39,9 @@
         .swiper {
             width: 100%;
             height: 100%;
+            --swiper-pagination-bullet-inactive-color: white;
+            --swiper-pagination-color: rgb(243, 134, 84);
+            --swiper-pagination-bullet-inactive-opacity: .8;
           }
        
           .swiper-slide {
@@ -87,6 +90,7 @@
             stroke-dasharray: 125.6;
             transform: rotate(-90deg);
           }
+
           
     }
 }

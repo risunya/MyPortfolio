@@ -25,18 +25,16 @@
                     text-wrap: nowrap;
                 }
                 .about-me {
-                    padding: 0 20px;
+                    padding: 5px;
                     font-size: 20px;
                     font-weight: 500;
-                    padding: 10px;
                     span {
-                        color: rgb(84, 153, 243);
+                        color: rgb(243, 134, 84);
                     }
                 }
                 .links {
                     display: flex;
                     flex-direction: row;
-                    padding: 10px;
                     .links__item {
                         padding: 10px;
                     }
@@ -111,7 +109,7 @@
                               pointer-events: none;
                               @include typed(
                                 "Волк:\A Шо, опять?",
-                                "Волк:\A Ну да. Работа такая, да. И никто мне косточку не подаст!",
+                                "Волк:\A Ну да. Работа такая, да. И никто мне косточку не подаст! ",
                                 "Волк:\A Ну ты это ... заходи, если шо!",
                                
                                 1.5,
