@@ -8,6 +8,10 @@
     .about__picture {
         height: 500px;
         width: 500px;
+        transition: .5s;
+    }
+    .about__picture:hover {
+        transform: rotate(-1deg);
     }
     .about-info {
         display: flex;
@@ -17,7 +21,6 @@
         .about-info__name {
             font-size: 45px;
             font-weight: 1000;
-            padding: 10px;
             text-wrap: nowrap;
         }
         .about-info__text {
@@ -28,8 +31,12 @@
             color: rgb(57, 57, 231);
             text-decoration: underline;
         }
-        span {
+        .first-span {
             color: rgb(243, 134, 84);
+        }
+        .second-span {
+            color: rgb(211, 185, 173);
+            font-style: italic;
         }
         }
     }

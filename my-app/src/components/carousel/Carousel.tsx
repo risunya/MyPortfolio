@@ -47,11 +47,20 @@ export const Carousel = () => {
                         return (
                             <div className="worklist-item">
                             <SwiperSlide>
-                                <div className="worklist-item-wrapper">
-                                    <div className="number">{data.id}</div>
-                                    <div className="title">Name of work: {data.title}</div>
-                                    <div className="subtitle">Title {data.subtitle}</div>
-                                </div>
+                                <a className="worklist-item-wrapper" href='#'>
+                                    <div className="title">{data.title}</div>
+                                    <div className='worklist-tech'>
+                                    {data.techStack.map(function(photoUrl, index) {
+                                        return (
+                                                <div className='worklist-tech__logo-wrapper' key={index}>
+                                                    <img src={photoUrl} className='worklist-tech__logo' alt="Tech logo"/>
+                                                </div>
+                                                );
+                                         })}
+                                    </div>
+                                    <div className="subtitle">{data.subtitle}</div>
+                                    <div className='bottom-button'>Читать подробнее</div>
+                                </a>
                             </SwiperSlide>
                             </div>
                         )
