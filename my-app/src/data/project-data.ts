@@ -8,7 +8,7 @@ export const tasks = [
          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
          "https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png",
          "https://cdn.icon-icons.com/icons2/2699/PNG/512/inext_logo_icon_170002.png",
-         "https://static-00.iconduck.com/assets.00/react-router-icon-2048x1116-jfeevj0l.png"
+         "https://www.svgrepo.com/show/354262/react-router.svg"
         ],
     },
     {
@@ -18,7 +18,7 @@ export const tasks = [
         techStack: 
         [
          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-         "https://static-00.iconduck.com/assets.00/react-router-icon-2048x1116-jfeevj0l.png"
+         "https://www.svgrepo.com/show/354262/react-router.svg"
         ],
     },
     {

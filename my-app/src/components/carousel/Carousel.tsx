@@ -33,7 +33,7 @@ export const Carousel = () => {
                     slidesPerView={2}
                     centeredSlides={true}
                     autoplay={{
-                      delay: 5000,
+                      delay: 10000,
                       disableOnInteraction: false,
                     }}
                     pagination={{

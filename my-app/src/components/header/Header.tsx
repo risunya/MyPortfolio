@@ -12,8 +12,8 @@ export const Header = () => {
                     <Link to='/'>
                         <div className='nav-text'>Главная</div>
                     </Link>
-                    <Link to='/projects'>
-                        <div className='nav-text'>Проекты</div>
+                    <Link to='/blog'>
+                        <div className='nav-text'>Статьи</div>
                     </Link>
                 </div>
             </div>
