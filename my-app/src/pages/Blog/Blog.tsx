@@ -11,12 +11,12 @@ export const Projects = () => {
                           <img src={data.picUrl} className='blog-img' alt="article logo"/>
                         </div>            
                         <div className="text-container">
+                            <div className="blog-title">{data.title}</div>
+                            <div className="blog-subtitle">{data.subtitle}</div>
                             <div className="spec-info">
                                 {data.frontend ? <div className="spec-item">фронтенд</div> : null}
                                 {data.backend ? <div className="spec-item">бэкенд</div> : null}
                             </div>
-                            <div className="blog-title">{data.title}</div>
-                            <div className="blog-subtitle">{data.subtitle}</div>
                         </div>
                     </div>
                 )
