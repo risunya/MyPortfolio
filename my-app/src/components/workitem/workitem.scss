@@ -1,0 +1,24 @@
+.work-container {
+    width: 1300px;
+    margin: 0 auto;
+    min-height: calc(100vh - 77.5px - 64px);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-background-color);
+    .work-title {
+        display: flex;
+        font-size: 35px;
+    }
+    .work-info {
+        display: flex;
+        color: gray;
+    }
+    .work-article {
+        text-align: justify;
+        padding: 0 20px;
+    }
+}
+
+

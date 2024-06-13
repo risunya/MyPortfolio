@@ -1,0 +1,45 @@
+.article-container {
+    width: 1300px;
+    margin: 0 auto;
+    min-height: calc(100vh - 77.5px - 64px);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-background-color);
+    .article-title {
+        display: flex;
+        font-size: 35px;
+    }
+    .article-info {
+        display: flex;
+        color: gray;
+        .article-date {
+            padding: 0 10px;
+        }
+        .article-spec {
+            display: flex;
+            padding: 0 5px;
+            gap: 5px;
+            .article-item {
+                padding: 0 10px;
+                margin-right: 5px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+                border-radius: 15px;
+            }
+        }
+    }
+    .article-content {
+        text-align: justify;
+        padding: 0 20px;
+    }
+    .article-picture {
+        margin: 20px auto;
+        max-height: 400px;
+        border-radius: 15px;
+    }
+}
+
+
