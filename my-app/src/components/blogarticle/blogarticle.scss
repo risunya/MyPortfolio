@@ -1,5 +1,5 @@
 .article-container {
-    width: 1300px;
+    width: 700px;
     margin: 0 auto;
     min-height: calc(100vh - 77.5px - 64px);
     margin: 0 auto;
@@ -37,7 +37,7 @@
     }
     .article-picture {
         margin: 20px auto;
-        max-height: 400px;
+        max-width: 400px;
         border-radius: 15px;
     }
 }

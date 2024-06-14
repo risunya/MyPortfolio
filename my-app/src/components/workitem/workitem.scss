@@ -1,5 +1,5 @@
 .work-container {
-    width: 1300px;
+    width: 1000px;
     margin: 0 auto;
     min-height: calc(100vh - 77.5px - 64px);
     margin: 0 auto;
@@ -10,15 +10,70 @@
     .work-title {
         display: flex;
         font-size: 35px;
+        margin: 0 25px;
     }
     .work-info {
         display: flex;
+        align-items: center;
         color: gray;
+        margin: 5px 25px;
+        .work-date {
+            border-radius: 25px;
+        }
+        .watch-live {
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            transition: .3s;
+        }
+        .watch-live:active {
+            background-color: grey;
+        }
     }
     .work-article {
         text-align: justify;
-        padding: 0 20px;
+        margin: 0 25px;
+    }
+    
+    .worklist-tech {
+        font-size: 24px;
+        margin: 15px;
+        padding: 5px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 70px;
+        background-color: var(--dark-background-color);
+        border-radius: 25px;
+        .worklist-tech__logo-wrapper {
+        height: 60px;
+        width: 100px;
+        padding: 0 5px;
+        }
+        .worklist-tech__logo {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        }
+    }
+    .project-images {
+        display: flex;
+        justify-content: space-around;
+        height: 400px;
+        width: 100%;
+        margin: 30px 0;
+        .project-image {
+            height: 100%;
+            padding: 15px;
+        }
+    }
+    .project-article {
+        margin: 15px;
+        padding: 5px 25px;
     }
 }
+
 
 
