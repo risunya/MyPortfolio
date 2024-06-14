@@ -12,14 +12,21 @@ export const WorkItem = () => {
     }
 
     return (
-        <div className="work-container">
-            <div className='work-title'>{project.title}</div>
+        <div className='work-container'>
+        <div className='controller'>
+        {((+project.id) !== 1) ? <a className="left-arrow" href={'/projects/' + (+project.id - 1)}>🢀</a> : null}
+        </div>
+        <div className="work-box">
+            <div className='work-title'><span className='sup-span'>Название:</span>{project.title}</div>
             <div className="work-info">
-                <div className="work-date">В разработке⚠️</div> 
+                <span className='sup-span'>Статус:</span>
+                <div className="work-status">В разработке⚠️</div> 
                 <a className='watch-live' href='#' target='_blank'>Попробовать</a>
                 <a className='watch-live' href='#' target='_blank'>Смотреть код</a>
             </div>
-            <div className="work-article">{project.subtitle}</div>
+            <div className="work-article">
+                <span className='sup-span'>Описание:</span> 
+                {project.subtitle}</div>
             <div className="project-images">
                 <img className='project-image' src='/project-pics/mac-pic.png' alt="Tech logo"/>
                 <img className='project-image' src='/project-pics/phone-pic.png' alt="Tech logo"/>
@@ -36,6 +43,10 @@ export const WorkItem = () => {
             <div className="project-article">
                 {project.article}
             </div>
+        </div>
+        <div className='controller'>
+            {((+project.id) !== 4) ? <a className="right-arrow" href={'/projects/' + (+project.id + 1)}>🢂</a> : null}
+        </div>
         </div>
     )
 }

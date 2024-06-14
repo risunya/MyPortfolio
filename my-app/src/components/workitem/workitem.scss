@@ -1,79 +1,128 @@
 .work-container {
-    width: 1000px;
-    margin: 0 auto;
-    min-height: calc(100vh - 77.5px - 64px);
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    background-color: var(--dark-background-color);
-    .work-title {
+    width: 1280px;
+    margin: 0 auto;
+    .work-box {
+        width: 1000px;
+        margin: 0 auto;
+        min-height: calc(100vh - 77.5px - 64px);
+        margin: 0 auto;
+        padding: 20px;
         display: flex;
-        font-size: 35px;
-        margin: 0 25px;
-    }
-    .work-info {
-        display: flex;
-        align-items: center;
-        color: gray;
-        margin: 5px 25px;
-        .work-date {
-            border-radius: 25px;
-        }
-        .watch-live {
-            margin: 0 10px;
-            padding: 5px 10px;
-            border-radius: 25px;
-            background-color: black;
-            color: white;
-            transition: .3s;
-        }
-        .watch-live:active {
-            background-color: grey;
-        }
-    }
-    .work-article {
-        text-align: justify;
-        margin: 0 25px;
-    }
-    
-    .worklist-tech {
-        font-size: 24px;
-        margin: 15px;
-        padding: 5px 25px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        height: 70px;
+        flex-direction: column;
         background-color: var(--dark-background-color);
-        border-radius: 25px;
-        .worklist-tech__logo-wrapper {
-        height: 60px;
-        width: 100px;
-        padding: 0 5px;
+        .sup-span {
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            color: gray;
+            margin-right: 20px;
+            font-size: 20px;
+            min-width: 150px;
+            height: 50px;
         }
-        .worklist-tech__logo {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
+        .work-title {
+            display: flex;
+            align-items: start;
+            font-size: 20px;
+            margin: 0 25px;
+            height: 50px;
         }
-    }
-    .project-images {
-        display: flex;
-        justify-content: space-around;
-        height: 400px;
-        width: 100%;
-        margin: 30px 0;
-        .project-image {
+        .work-info {
+            display: flex;
+            align-items: start;
+            margin: 5px 25px;
+            height: 50px;
+            .work-status {
+                padding: 5px 10px;
+                background: rgb(223, 223, 223);
+                color: black;
+                border-radius: 25px;
+            }
+            .watch-live {
+                margin-left: 20px;
+                padding: 5px 10px;
+                border-radius: 25px;
+                background-color: black;
+                color: white;
+                transition: .3s;
+            }
+            .watch-live:hover {
+                opacity: .8;
+            }
+            .watch-live:active {
+                transform: scale(.95);
+            }
+        }
+        .work-article {
+            font-size: 20px;
+            min-height: 75px;
+            display: flex;
+            align-items: start;
+            text-align: justify;
+            margin: 0 25px;
+        }
+        
+        .worklist-tech {
+            font-size: 20px;
+            margin: 15px;
+            padding: 5px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 70px;
+            background-color: var(--dark-background-color);
+            border-radius: 25px;
+            .worklist-tech__logo-wrapper {
+            height: 60px;
+            width: 100px;
+            padding: 0 5px;
+            }
+            .worklist-tech__logo {
             height: 100%;
-            padding: 15px;
+            width: 100%;
+            object-fit: contain;
+            }
+        }
+        .project-images {
+            display: flex;
+            justify-content: space-around;
+            height: 400px;
+            width: 100%;
+            margin: 30px 0;
+            .project-image {
+                height: 100%;
+                padding: 15px;
+            }
+        }
+        .project-article {
+            display: flex;
+            margin: 15px;
+            padding: 5px 25px;
+            text-align: justify;
         }
     }
-    .project-article {
-        margin: 15px;
-        padding: 5px 25px;
-    }
+        .controller {
+            margin-top: 450px;
+            width: 80px;
+            .left-arrow, .right-arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                padding: 5px 25px;
+                background-color: black;
+                color: white;
+                font-size: 20px;        
+                border-radius: 25px; 
+                transition: .3s;   
+            }
+            .left-arrow:hover, .right-arrow:hover {
+                opacity: .8;
+            }
+            .left-arrow:active, .right-arrow:active {
+                transform: scale(.95);
+            }
+        }
 }
-
-
 

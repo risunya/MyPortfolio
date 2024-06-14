@@ -46,7 +46,11 @@
                     }
                     .links__item:hover {
                       background-color: rgb(226, 218, 218, .5);
-                  }
+                    }
+                    .links__item:active {
+                      transform: scale(.95);
+                    }
+            
                 }
             }
             .info-right {

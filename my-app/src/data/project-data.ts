@@ -11,7 +11,7 @@ export const tasks = [
          "https://cdn.icon-icons.com/icons2/2699/PNG/512/inext_logo_icon_170002.png",
          "https://www.svgrepo.com/show/354262/react-router.svg"
         ],
-        article: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis pellentesque. Morbi aliquam nisl et magna vestibulum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis',
+        article: 'Разработка веб-приложения "Notes" стала настоящим вызовом, особенно когда пришлось оптимизировать производительность при работе с большим количеством заметок. Одной из самых интересных задач было внедрение функций совместного редактирования заметок в реальном времени, что потребовало использования веб-сокетов и глубокого понимания принципов работы серверов.',
     },
     {
         id: "2",
@@ -23,7 +23,7 @@ export const tasks = [
          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
          "https://www.svgrepo.com/show/354262/react-router.svg"
         ],
-        article: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis pellentesque. Morbi aliquam nisl et magna vestibulum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis',
+        article: 'Создание платформы для проведения квизов по программированию оказалось сложной задачей из-за необходимости интеграции различных типов вопросов и автоматической оценки результатов. Особенно интересно было разрабатывать алгоритмы, которые адаптируют сложность вопросов в зависимости от уровня подготовки пользователя, обеспечивая персонализированный и увлекательный опыт обучения.',
     },
     {
         id: "3",
@@ -32,11 +32,11 @@ export const tasks = [
         subtitle: 'Данное приложение представляет собой бота для мессенджера Telegram, который выполняет функции мониторинга и выдачи интересующих нас вакансий по запросу пользователя.',
         techStack: 
         [
-         "https://raw.githubusercontent.com/grammyjs/website/main/logos/grammY.png",
          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+         "https://raw.githubusercontent.com/grammyjs/website/main/logos/grammY.png",
         ],
-        article: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis pellentesque. Morbi aliquam nisl et magna vestibulum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis',
+        article: 'Создание Telegram-бота для мониторинга вакансий стало интересным проектом, особенно в части парсинга данных с различных сайтов и их фильтрации по запросам пользователей. Применение машинного обучения для улучшения подбора вакансий стало отличной возможностью повысить точность и релевантность предложений для пользователей.',
     },
     {
         id: "4",
@@ -49,7 +49,7 @@ export const tasks = [
          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
         ],
-        article: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis pellentesque. Morbi aliquam nisl et magna vestibulum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem libero, varius sed ante sed, lacinia egestas ante. Mauris vulputate hendrerit sapien in interdum. Donec faucibus malesuada pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi semper odio vulputate iaculis',
+        article: 'Работа над страницей с поисковиком для конспектов лекций и ответов на тесты потребовала разработки эффективного алгоритма индексации и ранжирования контента. Особенно интересно было внедрить возможности семантического поиска, которые позволили студентам находить материалы не только по ключевым словам, но и по смысловому соответствию, значительно облегчая подготовку к экзаменам.',
     },
 ]
 

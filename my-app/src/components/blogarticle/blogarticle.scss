@@ -1,8 +1,7 @@
 .article-container {
     width: 700px;
     margin: 0 auto;
-    min-height: calc(100vh - 77.5px - 64px);
-    margin: 0 auto;
+    max-height: fit-content;
     padding: 20px;
     display: flex;
     flex-direction: column;
