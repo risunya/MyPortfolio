@@ -3,14 +3,14 @@
 .profile-wrapper {
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 25px 0;
+    margin: 25px auto;
+    width: 1280px;
     .profile-content {
         display: flex;
         justify-content: center;
         flex-direction: column;
         max-width: 800px;
         margin: 0 auto;
-
         .info {
             display: flex;
             flex-direction: row;

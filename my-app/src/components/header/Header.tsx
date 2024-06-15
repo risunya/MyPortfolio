@@ -4,19 +4,19 @@ import './header.scss';
 export const Header = () => {
     return (
         <header className='header'>
-            <div className='header-wrapper'>
-                <Link to='/'>
-                    <div className='logo-text'>Aleshkin.dev</div>
-                </Link>
-                <div className="nav-items">
+            <div className='header__wrapper'>
+                <a href='/'>
+                    <div className='header__logo-text'>Aleshkin.dev</div>
+                </a>
+                <div className="header__nav-items">
                     <Link to='/'>
-                        <div className='nav-text'>Главная</div>
+                        <div className='header__nav-text'>Главная</div>
                     </Link>
                     <Link to='/projects'>
-                        <div className='nav-text'>Проекты</div>
+                        <div className='header__nav-text'>Проекты</div>
                     </Link>
                     <Link to='/blog'>
-                        <div className='nav-text'>Статьи</div>
+                        <div className='header__nav-text'>Статьи</div>
                     </Link>
                 </div>
             </div>

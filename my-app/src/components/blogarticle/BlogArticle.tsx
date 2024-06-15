@@ -21,12 +21,14 @@ export const BlogArticle = () => {
                 </div>
             </div>
             <div className="article-title">{article.title}</div>
-            {article.contentTextOne ? <div className="article-content">{article.contentTextOne}</div> : null}
-            {article.contentPictureOne ? <img className="article-picture" src={article.contentPictureOne}/> : null}
-            {article.contentTextTwo ? <div className="article-content">{article.contentTextTwo}</div> : null}
-            {article.contentPictureTwo ? <img className="article-picture" src={article.contentPictureTwo}/> : null}
-            {article.contentTextThree ? <div className="article-content">{article.contentTextThree}</div> : null}
-            {article.contentPictureThree ? <img className="article-picture" src={article.contentPictureThree}/> : null}
+            <div className='article-box'>
+                {article.contentTextOne ? <div className="article-content">{article.contentTextOne}</div> : null}
+                {article.contentPictureOne ? <img className="article-picture" src={article.contentPictureOne}/> : null}
+                {article.contentTextTwo ? <div className="article-content">{article.contentTextTwo}</div> : null}
+                {article.contentPictureTwo ? <img className="article-picture" src={article.contentPictureTwo}/> : null}
+                {article.contentTextThree ? <div className="article-content">{article.contentTextThree}</div> : null}
+                {article.contentPictureThree ? <img className="article-picture" src={article.contentPictureThree}/> : null}
+            </div>
         </div>
     );
 };

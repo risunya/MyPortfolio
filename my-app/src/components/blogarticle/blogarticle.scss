@@ -2,7 +2,6 @@
     width: 700px;
     margin: 0 auto;
     max-height: fit-content;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     background-color: var(--dark-background-color);
@@ -22,7 +21,6 @@
             gap: 5px;
             .article-item {
                 padding: 0 10px;
-                margin-right: 5px;
                 background-color: black;
                 color: white;
                 border: 1px solid black;
@@ -30,14 +28,21 @@
             }
         }
     }
-    .article-content {
-        text-align: justify;
-        padding: 0 20px;
-    }
-    .article-picture {
-        margin: 20px auto;
-        max-width: 400px;
-        border-radius: 15px;
+    .article-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 0;
+        align-items: center;
+        .article-content {
+            display: flex;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .article-picture {
+            width: 100%;
+            margin: 15px 0;
+        }
     }
 }
 
