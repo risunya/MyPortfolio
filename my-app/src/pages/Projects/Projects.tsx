@@ -3,14 +3,18 @@ import './projects.scss'
 
 export const Projects = () => {
     return (
-        <div className="worklist">
+        <div className="projects-list">
             {tasks.map(function(data) {
                 return (
-                    <div className="worklist-item">
-                        <div className="number">{data.id}</div>
-                        <div className="title">Name of work: {data.title}</div>
-                        <div className="subtitle">Title {data.subtitle}</div>
-                    </div>
+                    <a className="projects-item" href={'projects/' + data.id}>
+                        <div className='projects-img_wrapper'>
+                          <img src={data.pcImage} className='projects-img' alt="article logo"/>
+                        </div>            
+                        <div className="text-container">
+                            <div className="projects-title">{data.title}</div>
+                            <div className="projects-subtitle">{data.subtitle}</div>
+                        </div>
+                    </a>
                 )
                 })}
         </div>

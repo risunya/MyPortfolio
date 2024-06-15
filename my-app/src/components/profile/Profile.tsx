@@ -14,7 +14,7 @@ export const Profile = () => {
                     <div className="info-left">
                         <div className="greeting">Привет, я Андрей! 👋</div>
                         <div className="about-me">
-                            Трудолюбивый <span>Фронтенд React Разработчик</span>, из города Санкт-Петербург, Россия.
+                            Трудолюбивый <span>Фронтенд Разработчик</span>, из города Санкт-Петербург, Россия.
                         </div>
                         <div className="links">
                             <a className="links__item" href='https://github.com/risunya' target='_blank'><FirstIcon/></a>

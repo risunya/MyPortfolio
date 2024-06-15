@@ -1,35 +1,35 @@
-.header {
+.top-header {
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
     font-size: 25px;
-    padding: 20px 0;
     box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 2;
-    .header-wrapper {
+    .header__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        width: 1280px;
-        
+        max-width: 1280px;
+        width: 100%;
+        padding: 15px 0;
     }
-    .logo-text {
+    .header__logo-text {
         font-weight: 800;
         color: var(--text-color);
     }
-    .nav-items {
+    .header__nav-items {
         display: flex;
         justify-content: space-between;
-        width: 200px;
-        .nav-text {
-            font-size: 22px;
+        width: 300px;
+        .header__nav-text {
+            font-size: 20px;
             transition: .3s;
             color: var(--text-color);
         }
-        .nav-text:hover {
+        .header__nav-text:hover {
            color: var(--second-text-color);
         }
     }

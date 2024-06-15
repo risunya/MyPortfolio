@@ -10,7 +10,7 @@
         width: 500px;
         transition: .5s;
     }
-    .about__picture:hover {
+    .about__picture:active {
         transform: rotate(-1deg);
     }
     .about-info {

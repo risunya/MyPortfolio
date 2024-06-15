@@ -1,0 +1,19 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    .notfound-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .notfound-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

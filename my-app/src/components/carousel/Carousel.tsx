@@ -33,7 +33,7 @@ export const Carousel = () => {
                     slidesPerView={2}
                     centeredSlides={true}
                     autoplay={{
-                      delay: 5000,
+                      delay: 10000,
                       disableOnInteraction: false,
                     }}
                     pagination={{
@@ -47,7 +47,7 @@ export const Carousel = () => {
                         return (
                             <div className="worklist-item">
                             <SwiperSlide>
-                                <a className="worklist-item-wrapper" href='#'>
+                                <a className="worklist-item-wrapper" href={data.link}>
                                     <div className="title">{data.title}</div>
                                     <div className='worklist-tech'>
                                     {data.techStack.map(function(photoUrl, index) {
@@ -56,7 +56,7 @@ export const Carousel = () => {
                                                     <img src={photoUrl} className='worklist-tech__logo' alt="Tech logo"/>
                                                 </div>
                                                 );
-                                         })}
+                                    })}
                                     </div>
                                     <div className="subtitle">{data.subtitle}</div>
                                     <div className='bottom-button'>Читать подробнее</div>

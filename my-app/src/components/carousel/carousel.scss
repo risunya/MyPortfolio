@@ -32,7 +32,7 @@
           padding: 0;
           transition: .5s;
         }
-        .carousel-logo:hover {
+        .carousel-logo:active {
           transform: rotate(-1deg);
         }
     }
@@ -148,6 +148,11 @@
             .bottom-button {
               background-color: white;
               color: black;
+            }
+          }
+          .worklist-item-wrapper:active {
+            .bottom-button {
+              transform: scale(.95);
             }
           }
     }
