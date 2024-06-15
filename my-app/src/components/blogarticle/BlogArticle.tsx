@@ -12,7 +12,8 @@ export const BlogArticle = () => {
     }
 
     return (
-        <div className="article-container">
+        <div className="article-wrapper">
+            <div className="article-container">
             <div className="article-info">
                 <a className="article-date">{article.date}</a> 
                 <div className="article-spec">
@@ -29,6 +30,7 @@ export const BlogArticle = () => {
                 {article.contentTextThree ? <div className="article-content">{article.contentTextThree}</div> : null}
                 {article.contentPictureThree ? <img className="article-picture" src={article.contentPictureThree}/> : null}
             </div>
+        </div>
         </div>
     );
 };

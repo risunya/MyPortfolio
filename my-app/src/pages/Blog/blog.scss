@@ -10,7 +10,7 @@
         transition: .5s;
         margin: 15px 0;
         padding: 15px 35px;
-        gap: 15px;
+        gap: 5px;
         .blog-img_wrapper {
             display: flex;
             align-items: center;
@@ -28,18 +28,21 @@
             color: var(--text-color);
             .spec-info {
                 display: flex;
+                margin-bottom: 5px;
                 .spec-item {
-                    font-size: 15px;
+                    font-size: 12px;
                     background-color: black;
                     color: white;
                     border: 1px solid black;
                     border-radius: 45px;
-                    margin-right: 5px;
-                    padding: 4px 8px;
+                    padding: 3px 8px;
+                    margin-right: 10px;
                 }
             }
             .blog-title {
-                font-size: 24px;
+                font-size: 18px;
+                border-bottom: 1px solid rgb(216, 216, 216);
+                margin-bottom: 5px;
             }
         }
         .blog-subtitle {

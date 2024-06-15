@@ -1,20 +1,20 @@
-.header {
+.top-header {
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
     font-size: 25px;
-    padding: 20px 0;
     box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 2;
     .header__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        width: 1280px;
-        
+        max-width: 1280px;
+        width: 100%;
+        padding: 15px 0;
     }
     .header__logo-text {
         font-weight: 800;
@@ -25,7 +25,7 @@
         justify-content: space-between;
         width: 300px;
         .header__nav-text {
-            font-size: 22px;
+            font-size: 20px;
             transition: .3s;
             color: var(--text-color);
         }

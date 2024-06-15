@@ -21,15 +21,15 @@ export const WorkItem = () => {
             <div className="work-info">
                 <span className='sup-span'>Статус:</span>
                 <div className="work-status">В разработке⚠️</div> 
-                <a className='watch-live' href='#' target='_blank'>Попробовать</a>
-                <a className='watch-live' href='#' target='_blank'>Смотреть код</a>
+                <a className='watch-live' href='#' target='_blank' style={{pointerEvents: "none", textDecoration:'line-through '}}>Попробовать</a>
+                <a className='watch-live' href={project.codeUrl} target='_blank'>Смотреть код</a>
             </div>
             <div className="work-article">
                 <span className='sup-span'>Описание:</span> 
                 {project.subtitle}</div>
             <div className="project-images">
-                <img className='project-image' src='/project-pics/mac-pic.png' alt="Tech logo"/>
-                <img className='project-image' src='/project-pics/phone-pic.png' alt="Tech logo"/>
+                <img className='project-image' src={project.pcImage} alt="Tech logo"/>
+                {(project.phoneImage !== '' ? <img className='project-image' src='/project-pics/phone-pic.png' alt="Tech logo"/> : null)}
             </div>
             <div className='worklist-tech'>Ключевые технологии:
             {project.techStack.map(function(photoUrl, index) {

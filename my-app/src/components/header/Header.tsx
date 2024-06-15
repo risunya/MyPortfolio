@@ -3,7 +3,7 @@ import './header.scss';
 
 export const Header = () => {
     return (
-        <header className='header'>
+        <div className='top-header'>
             <div className='header__wrapper'>
                 <a href='/'>
                     <div className='header__logo-text'>Aleshkin.dev</div>
@@ -20,7 +20,7 @@ export const Header = () => {
                     </Link>
                 </div>
             </div>
-        </header>
+        </div>
     )
 }
     

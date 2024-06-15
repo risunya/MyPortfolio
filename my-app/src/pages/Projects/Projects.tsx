@@ -8,7 +8,7 @@ export const Projects = () => {
                 return (
                     <a className="projects-item" href={'projects/' + data.id}>
                         <div className='projects-img_wrapper'>
-                          <img src='/project-pics/mac-pic.png' className='projects-img' alt="article logo"/>
+                          <img src={data.pcImage} className='projects-img' alt="article logo"/>
                         </div>            
                         <div className="text-container">
                             <div className="projects-title">{data.title}</div>

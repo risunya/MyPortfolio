@@ -56,7 +56,7 @@ export const Carousel = () => {
                                                     <img src={photoUrl} className='worklist-tech__logo' alt="Tech logo"/>
                                                 </div>
                                                 );
-                                         })}
+                                    })}
                                     </div>
                                     <div className="subtitle">{data.subtitle}</div>
                                     <div className='bottom-button'>Читать подробнее</div>

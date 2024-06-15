@@ -28,3 +28,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+html, body {margin: 0; height: 100%;}
