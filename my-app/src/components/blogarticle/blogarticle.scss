@@ -3,10 +3,10 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        width: 1280px;
+        width: 80rem;
         padding: 20px 0;
     .article-container {
-        width: 700px;
+        width: 100%;
         margin: 0 auto;
         padding: 25px;
         display: flex;
@@ -14,26 +14,29 @@
         background-color: var(--dark-background-color);
         .article-title {
             display: flex;
-            font-size: 22px;
+            font-size: 2.5rem;
             margin: 5px 0;
+            padding: 0 1rem;
             border-bottom: 1px rgb(211, 210, 210) solid;
         }
         .article-info {
             display: flex;
+            align-items: center;
             color: gray;
             .article-date {
-                font-size: 16px;
+                font-size: 2rem;
             }
             .article-spec {
                 display: flex;
                 padding: 0 5px;
                 gap: 5px;
                 .article-item {
+                    font-size: 2rem;
                     padding: 0 10px;
                     background-color: black;
                     color: white;
                     border: 1px solid black;
-                    border-radius: 15px;
+                    border-radius: 35px;
                 }
             }
         }
@@ -45,15 +48,48 @@
             .article-content {
                 display: flex;
                 text-align: justify;
-                padding: 0 5px;
+                font-size: 2.5rem;
             }
             .article-picture {
                 width: 100%;
-                margin: 10px 0;
+                margin: 10px 1rem;
             }
         }
     }
     
     
     
+}
+@media (max-width: 1200px) {
+    .article-wrapper {
+        width: 70vw;
+        .article-container {
+            width: 100%;
+            .article-title {
+                font-size: 1.8rem;
+            }
+            .article-info {
+                display: flex;
+                color: gray;
+                .article-date {
+                    font-size: 1.5rem;
+                }
+                .article-spec {
+                    .article-item {
+                     font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .article-box {
+        .article-content {
+            font-size: 2rem !important;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .article-wrapper {
+        width: 100vw;
+    }
 }

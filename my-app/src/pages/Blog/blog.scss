@@ -1,6 +1,6 @@
 .blog-list {
     margin: 0 auto;
-    width: 700px;
+    width: 70rem;
     display: flex;
     flex-direction: column;
     .blog-item {
@@ -40,23 +40,24 @@
                 }
             }
             .blog-title {
-                font-size: 18px;
+                font-size: 2rem;
                 border-bottom: 1px solid rgb(216, 216, 216);
                 margin-bottom: 5px;
             }
         }
         .blog-subtitle {
             color: grey;
+            font-size: 1.8rem;
         }
         .read-button {
+            font-size: 2rem;
+            padding: 1rem 3rem;
             align-self: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 35px;
-            width: 125px;
             border: 1px solid black;
-            border-radius: 25px;
+            border-radius: 3rem;
             background-color: black;
             color: white;
             background-color: white;
@@ -75,4 +76,9 @@
         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     }
    
+}
+@media (max-width: 768px) {
+    .blog-list {
+        width: 90vw;
+    }
 }
