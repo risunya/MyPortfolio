@@ -12,9 +12,14 @@
         margin: 0 auto;
         max-width: 1280px;
         width: 100%;
-        padding: 20px 0;
+        padding: 1rem 2rem ;;
         .bottom-footer__reserved {
             font-size: 18px;
+        }
+        @media (max-width: 768px) {
+          .bottom-footer__reserved {
+            display: none;
+          }
         }
         .bottom-footer__links {
             display: flex;
@@ -37,6 +42,11 @@
               }
         }
     }   
+    @media (max-width: 768px) {
+      .bottom-footer-wrapper {
+        justify-content: center;
+      }
+    }
 }
 
 

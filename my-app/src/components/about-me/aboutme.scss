@@ -10,8 +10,10 @@
         width: 500px;
         transition: .5s;
     }
-    .about__picture:active {
-        transform: rotate(-1deg);
+    @media (max-width: 1200px) { 
+        .about__picture {
+            display: none;
+        }
     }
     .about-info {
         display: flex;
@@ -41,4 +43,23 @@
         }
     }
 
+}
+@media (max-width: 1200px) {
+    .about-wrapper {
+        margin: 5rem auto;
+        width: calc(100vw - 2rem);
+        .about-info {
+            font-size: 20rem;
+            text-align: center;
+            width: 100%;
+            .about-info__name {
+                font-size: 5rem;
+            }
+            .about-info__text {
+                font-size: 3rem;
+                padding: 2rem;
+            }
+        }
+       
+    }
 }

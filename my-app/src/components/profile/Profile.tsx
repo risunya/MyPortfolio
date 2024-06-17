@@ -23,7 +23,7 @@ export const Profile = () => {
                         </div>
                     </div>
                     <div className="info-right">
-                        <div className="profile-picture" >
+                        <div className="profile-picture-wrapper" >
                             <img src="./icon-one.png" alt="profile-picture"/>
                         <div className="info-right__message">
                             <div className="input-wrapper">

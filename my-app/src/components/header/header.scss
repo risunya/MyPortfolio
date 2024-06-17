@@ -1,12 +1,11 @@
-.top-header {
+.header {
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-    font-size: 25px;
     box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.34);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
     .header__wrapper {
         display: flex;
         justify-content: space-between;
@@ -14,9 +13,10 @@
         margin: 0 auto;
         max-width: 1280px;
         width: 100%;
-        padding: 15px 0;
+        padding: 1rem 2rem ;
     }
     .header__logo-text {
+        font-size: 2.5rem;
         font-weight: 800;
         color: var(--text-color);
     }
@@ -25,13 +25,69 @@
         justify-content: space-between;
         width: 300px;
         .header__nav-text {
-            font-size: 20px;
             transition: .3s;
             color: var(--text-color);
-        }
-        .header__nav-text:hover {
-           color: var(--second-text-color);
+            font-size: 2rem;
+            &:hover {
+                color: var(--second-text-color);
+             }
         }
     }
-
+    .header__button {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        .header__nav-items {
+            display: none;
+        }
+        .header__button {
+            z-index: 999 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            transition: .4s;
+            border-radius: 99999px;
+            padding: 5px;
+            &:hover {
+                background-color: rgb(232, 232, 232);
+            }
+            &:active {
+                transform: scale(.9);
+            }
+        }
+        .mobile-menu {
+            position: absolute;
+            z-index: 3;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mobile__nav-items {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .mobile__nav-text {
+                    margin: 2rem 0;
+                    transition: .3s;
+                    color: var(--text-color);
+                    font-size: 4rem;
+                    &:hover {
+                        color: var(--second-text-color);
+                    }
+                }
+            }
+        }
+    }
 }
+

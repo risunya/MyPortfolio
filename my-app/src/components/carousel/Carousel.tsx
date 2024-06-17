@@ -12,16 +12,18 @@ export const Carousel = () => {
     const progressCircle = useRef<SVGSVGElement>(null);
     const progressContent = useRef<HTMLSpanElement>(null);
 
-    const onAutoplayTimeLeft = (_: unknown, time: number, progress: number) => {
-        if (progressCircle.current && progressContent.current) {
-            progressCircle.current.style.setProperty('--progress', `${1 - progress}`);
+    const onAutoplayTimeLeft = (_s: unknown, time: number, progress: number) => {
+        if (progressCircle.current) {
+            progressCircle.current.style.setProperty('--progress', (1 - progress).toString());
+        }
+        if (progressContent.current) {
             progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
         }
     };
 
     return (
         <div className='works-carousel-wrapper'>
-            <div className="works-carousel">
+            <div className="works-info">
                 <div className='carousel-caption'>
                     <div className="carousel-name">МОИ ПРОЕКТЫ 💪</div>
                     <div className="carousel-description">
@@ -36,7 +38,7 @@ export const Carousel = () => {
                 <Swiper
                     loop={true}
                     spaceBetween={30}
-                    slidesPerView={2}
+                    slidesPerView={"auto"}
                     centeredSlides={true}
                     autoplay={{
                         delay: 5000,

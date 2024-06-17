@@ -1,11 +1,14 @@
 .marquee-wrapper {
-    gap: 10px;
+    gap: 1rem;
 }
 .marquee {
-    padding: 0 0 15px 0;    
+    padding: 0 0 1.5rem 0; 
+    .rfm-overlay {
+        z-index: 5;
+    }  
     .marquee-item {
-        padding: 10px 20px;
-        margin: 0 15px;
+        padding: 1rem 2rem;
+        margin: 0 1.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -14,20 +17,20 @@
         border: 1px solid rgb(235, 226, 226);
         transition: .5s;
         .marquee-item__name {
-            font-size: 30px;
+            font-size: 3rem;
             font-weight: 800;
             text-align: center;
-            padding: 0 20px 0 0;
+            padding: 0 2rem 0 0;
         }
         .marquee-item__pictures {
             display: flex;
             justify-content: space-around;
             * {
-                gap: 15px;
-                height: 40px;
-                width: 40px;
-                border-radius: 10px;
-                padding: 0 5px;
+                gap: 1.5rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 1rem;
+                padding: 0 0.5rem;
             }
         }
         
