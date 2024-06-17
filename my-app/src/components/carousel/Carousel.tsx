@@ -13,7 +13,7 @@ export const Carousel = () => {
     const progressCircle = useRef<SVGSVGElement>(null);
     const progressContent = useRef<HTMLSpanElement>(null);
 
-    const onAutoplayTimeLeft = (s: unknown, time: number, progress: number) => {
+    const onAutoplayTimeLeft = (_s: unknown, time: number, progress: number) => {
         if (progressCircle.current) {
             progressCircle.current.style.setProperty('--progress', (1 - progress).toString());
         }
