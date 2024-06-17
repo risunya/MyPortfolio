@@ -19,17 +19,12 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
 html, body {margin: 0; height: 100%;}
+
+#root {
+	font-size: 24px;
+}

@@ -22,6 +22,7 @@ export const MarqueeComponent = () => {
             <div className='marquee'>
                 <Marquee 
                 gradient={true} 
+                gradientWidth={"80px"}
                 speed={60} 
                 autoFill={true} 
                 direction='right' 
@@ -62,6 +63,7 @@ export const MarqueeComponent = () => {
             <div className="marquee">
                 <Marquee 
                 gradient={true} 
+                gradientWidth={"80px"}
                 speed={60} 
                 autoFill={true} 
                 direction='left' 

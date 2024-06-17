@@ -6,8 +6,8 @@ import { NotFound } from './pages/NotFound/Notfound'
 import { Header } from './components/header/Header'
 import { Footer } from './components/footer/Footer'
 import { BlogArticle } from './components/blogarticle/BlogArticle'
-import { WorkItem } from './components/workitem/WorkItem'
 import { Projects } from './pages/Projects/Projects'
+import { WorkItem } from './components/workitem/WorkItem'
 
 function App() {
   return (

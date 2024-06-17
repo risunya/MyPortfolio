@@ -9,15 +9,21 @@ import 'swiper/css/pagination';
 import { tasks } from "../../data/project-data"
 
 export const Carousel = () => {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
+
+    const progressCircle = useRef<SVGSVGElement>(null);
+    const progressContent = useRef<HTMLSpanElement>(null);
+
     const onAutoplayTimeLeft = (s: unknown, time: number, progress: number) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+        if (progressCircle.current) {
+            progressCircle.current.style.setProperty('--progress', (1 - progress).toString());
+        }
+        if (progressContent.current) {
+            progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+        }
     };
     return (
         <div className='works-carousel-wrapper'>
-            <div className="works-carousel">
+            <div className="works-info">
                 <div className='carousel-caption'>
                     <div className="carousel-name">МОИ ПРОЕКТЫ 💪</div>
                     <div className="carousel-description">Разработка - это моя страсть, поэтому я отдаюсь каждой задаче на полную, будь то серверная часть или создание адаптивного дизайна интерфейсов. В каждом проекте я стремлюсь к совершенству, превращая сложные задачи в элегантные решения.</div>
@@ -30,7 +36,7 @@ export const Carousel = () => {
                 <Swiper
                     loop={true}
                     spaceBetween={30}
-                    slidesPerView={2}
+                    slidesPerView={"auto"}
                     centeredSlides={true}
                     autoplay={{
                       delay: 10000,
