@@ -53,7 +53,7 @@ export const Carousel = () => {
                         return (
                             <div className="worklist-item">
                             <SwiperSlide>
-                                <a className="worklist-item-wrapper" href={data.link}>
+                                <a className="worklist-item-wrapper" href={'/projects/' + data.id}>
                                     <div className="title">{data.title}</div>
                                     <div className='worklist-tech'>
                                     {data.techStack.map(function(photoUrl, index) {

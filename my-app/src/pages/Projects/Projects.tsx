@@ -6,7 +6,7 @@ export const Projects = () => {
         <div className="projects-list">
             {tasks.map(function(data) {
                 return (
-                    <a className="projects-item" href={'projects/' + data.id}>
+                    <a className="projects-item" href={'/projects/' + data.id}>
                         <div className='projects-img_wrapper'>
                           <img src={data.pcImage} className='projects-img' alt="article logo"/>
                         </div>            
