@@ -9,19 +9,22 @@ import 'swiper/css/pagination';
 import { tasks } from "../../data/project-data"
 
 export const Carousel = () => {
+
     const progressCircle = useRef<SVGSVGElement>(null);
     const progressContent = useRef<HTMLSpanElement>(null);
 
-    const onAutoplayTimeLeft = (_: unknown, time: number, progress: number) => {
-        if (progressCircle.current && progressContent.current) {
-            progressCircle.current.style.setProperty('--progress', `${1 - progress}`);
+    const onAutoplayTimeLeft = (_s: unknown, time: number, progress: number) => {
+        if (progressCircle.current) {
+            progressCircle.current.style.setProperty('--progress', (1 - progress).toString());
+        }
+        if (progressContent.current) {
             progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
         }
     };
 
     return (
         <div className='works-carousel-wrapper'>
-            <div className="works-carousel">
+            <div className="works-info">
                 <div className='carousel-caption'>
                     <div className="carousel-name">МОИ ПРОЕКТЫ 💪</div>
                     <div className="carousel-description">
@@ -36,7 +39,7 @@ export const Carousel = () => {
                 <Swiper
                     loop={true}
                     spaceBetween={30}
-                    slidesPerView={2}
+                    slidesPerView={"auto"}
                     centeredSlides={true}
                     autoplay={{
                         delay: 5000,
@@ -49,22 +52,28 @@ export const Carousel = () => {
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
                     className="mySwiper"
                 >
-                    {tasks.map((data, index) => (
-                        <SwiperSlide key={index}>
-                            <a className="worklist-item-wrapper" href='#'>
-                                <div className="title">{data.title}</div>
-                                <div className='worklist-tech'>
-                                    {data.techStack.map((photoUrl, techIndex) => (
-                                        <div className='worklist-tech__logo-wrapper' key={techIndex}>
-                                            <img src={photoUrl} className='worklist-tech__logo' alt="Tech logo"/>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="subtitle">{data.subtitle}</div>
-                                <div className='bottom-button'>Читать подробнее</div>
-                            </a>
-                        </SwiperSlide>
-                    ))}
+                    {tasks.map(function(data) {
+                        return (
+                            <div className="worklist-item">
+                            <SwiperSlide>
+                                <a className="worklist-item-wrapper" href={'/projects/' + data.id}>
+                                    <div className="title">{data.title}</div>
+                                    <div className='worklist-tech'>
+                                    {data.techStack.map(function(photoUrl, index) {
+                                        return (
+                                                <div className='worklist-tech__logo-wrapper' key={index}>
+                                                    <img src={photoUrl} className='worklist-tech__logo' alt="Tech logo"/>
+                                                </div>
+                                                );
+                                    })}
+                                    </div>
+                                    <div className="subtitle">{data.subtitle}</div>
+                                    <div className='bottom-button'>Читать подробнее</div>
+                                </a>
+                            </SwiperSlide>
+                            </div>
+                        )
+                     })}
                     <div className="autoplay-progress" slot="container-end">
                         <svg viewBox="0 0 48 48" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>

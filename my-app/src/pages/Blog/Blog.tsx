@@ -18,7 +18,7 @@ export const Blog = () => {
                           <img src={data.picUrl} className='blog-img' alt="article logo"/>
                         </div> 
                         <div className="blog-subtitle">{data.subtitle}</div>
-                        <a className='read-button' href={data.href}>Читать далее</a>
+                        <a className='read-button' href={'/blog/' + data.id}>Читать далее</a>
                     </div>
                 )
                 })}
