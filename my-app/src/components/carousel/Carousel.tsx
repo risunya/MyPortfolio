@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import { tasks } from "../../data/project-data"
 
 export const Carousel = () => {
-
     const progressCircle = useRef<SVGSVGElement>(null);
     const progressContent = useRef<HTMLSpanElement>(null);
 
