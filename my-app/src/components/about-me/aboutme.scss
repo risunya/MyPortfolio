@@ -50,14 +50,18 @@
         width: calc(100vw - 2rem);
         .about-info {
             font-size: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             width: 100%;
             .about-info__name {
                 font-size: 5rem;
             }
             .about-info__text {
-                font-size: 3rem;
-                padding: 2rem;
+                width: 60%;
+                font-size: 2rem;
+                padding: 0 1rem ;
             }
         }
        

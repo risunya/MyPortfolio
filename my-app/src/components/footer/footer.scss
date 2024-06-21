@@ -1,5 +1,4 @@
 .bottom-footer {
-    height: 75px;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
@@ -12,9 +11,9 @@
         margin: 0 auto;
         max-width: 1280px;
         width: 100%;
-        padding: 1rem 2rem ;;
+        padding: 1.5rem 2rem ;;
         .bottom-footer__reserved {
-            font-size: 18px;
+            font-size: 1.8rem;
         }
         @media (max-width: 768px) {
           .bottom-footer__reserved {
@@ -24,9 +23,8 @@
         .bottom-footer__links {
             display: flex;
             flex-direction: row;
-            padding: 10px;
             .bottom-footer__links__item {
-                padding: 10px;
+                padding: 0 10px;
                 border-radius: 99999px;
                 display: flex;
                 justify-content: center;

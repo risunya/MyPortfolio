@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     .works-info {
-        padding: 20px 0;
+        padding: 1rem 2rem;
         margin: 0 auto;
         max-width: 1280px;
         display: flex;
@@ -18,12 +18,12 @@
             justify-content: center;
             .carousel-name {
                 padding: 1rem 0;
-                font-size: 5rem;
+                font-size: 4rem;
                 font-weight: 800;
             }
             .carousel-description {
                 padding: 1rem 0;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 800;
             }
             @media (max-width: 992px) {

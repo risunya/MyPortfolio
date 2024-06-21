@@ -21,7 +21,7 @@ export const WorkItem = () => {
             <div className="work-info">
                 <span className='sup-span'>Статус:</span>
                 <div className="work-status">В разработке⚠️</div> 
-                <a className='watch-live' href='#' target='_blank' style={{pointerEvents: "none", textDecoration:'line-through '}}>Попробовать</a>
+                <a className='watch-live' href={project.projectUrl} target='_blank'>Попробовать</a>
                 <a className='watch-live' href={project.codeUrl} target='_blank'>Смотреть код</a>
             </div>
             <div className="work-article">
